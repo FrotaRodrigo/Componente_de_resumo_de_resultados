@@ -84,7 +84,7 @@ body {
     margin-top: 16px;
 }
 
-.result .info{
+.result .info {
     color: var(--Light-lavender);
     width: 200px;
 }
@@ -113,5 +113,88 @@ body {
     border-radius: 10px;
     align-items: center;
     justify-content: space-between;
+    margin-top: 12px;
     padding: 16px .80px;
+}
+
+.row:nth-child(1) {
+    background-color: hsla(0, 100%, 67%,.2);
+}
+.row:nth-child(1) .bagde b {
+    color: var(--Light-red);
+}
+
+.row:nth-child(2) {
+    background-color: hsla(39, 100%, 56%,.2);
+}
+.row:nth-child(2) .bagde b {
+    color: var(--Orangey-yellow);
+}
+
+.row:nth-child(3) {
+    background-color: hsla(166, 100%, 37%,.2);
+}
+.row:nth-child(3) .bagde b {
+    color: var(--Green-teal);
+}
+
+.row:nth-child(4) {
+    background-color: hsla(234, 85%, 45%,.2);
+}
+.row:nth-child(4) .bagde b {
+    color: var(--Cobalt-blue);
+}
+
+.bagde {
+    display: flex;
+    align-items: center;
+    gap: .80px;
+}
+
+.row p {
+    color: gray;
+}
+
+.row p b {
+    color: var(--Dark-gray-blue);
+}
+
+.btn {
+    margin-top: auto;
+    padding: 16px;
+    border: none;
+    border-radius: 32px;
+    background: var(--Dark-gray-blue);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, var(--Violet-blue-circle),var(--Persian-blue-circle));
+}
+
+@media screen and (max-width:650px) {
+    body {
+        align-items: flex-start;
+        background-color: white;
+    }
+    .card {
+        box-shadow: none;
+    }
+    .sub-container {
+        flex-direction: column;
+    }
+    .result {
+        border-radius: 0 0 16px 16px;
+        width: 100%;
+    }
+
+    .result .info {
+        width: 250px;
+    }
+
+    .summary {
+        width: 100%;
+    }
 }
